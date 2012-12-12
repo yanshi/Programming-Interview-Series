@@ -14,21 +14,16 @@ public class ReverseLinkedList {
 		String c = "c";
 		String[] list = {a,b,c};
 		MyLinkedList ml = new MyLinkedList(list);
-		print(ml);
+//		print(ml);
+//		ml.reverseList();
+//		print(ml);
+		System.out.println(ml.toString());
 		ml.reverseList();
-		print(ml);
+		System.out.println(ml.toString());
 		
 
 	}
 
-	private static void print(MyLinkedList ml) {
-		// TODO Auto-generated method stub
-		Node temp = ml.getFirst();
-		for(temp=ml.getFirst();temp.next!=null;temp=temp.next){
-			System.out.println(temp.getValue().toString());
-		}
-		System.out.println(temp.getValue().toString());
-	}
 	
 
 

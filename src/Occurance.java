@@ -13,6 +13,8 @@ public class Occurance {
 	}
 	
 	public static int getOccurance(int[] array,int min, int max, int target){
+		//the first step for writing a recursive method is to determine
+		//when to stop
 		if(min>max){ //if the array is empty, no target is there
 			return 0;
 		}
@@ -20,6 +22,10 @@ public class Occurance {
 			return 0; //the largest number of array is still less than the target, no target in the arry;
 			          //the smallest number of the array is greater than the target, no target in the array
 		}
+		if(array[min]==target&&array[max]==target){
+			return max-min+1;
+		}
+		
 		int count = 0;
 		int mid = (min+max)/2;
 		if (array[mid]== target){

@@ -12,9 +12,7 @@ public class parenthesisPrint {
 	}
 	
 	public static void printParenthesis(String s,int left, int right){
-		
-		
-		StringBuffer sb = new StringBuffer("");
+				
 		if(right == 0){
 			System.out.println(s);
 			return;
